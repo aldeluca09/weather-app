@@ -1,0 +1,64 @@
+.container {
+  border: 2px solid #000;
+  margin: 30px 20px;
+  padding: 25px 10px 10px 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  padding: 15px;
+}
+
+#temperature {
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: none;
+  padding-left: 100px;
+}
+
+h3 {
+  font-style: italic;
+  padding: 0 0 30px 30px;
+  color: #000;
+}
+
+#wind {
+  font-style: bolder;
+  padding-left: 100px;
+}
+
+#humidity {
+  padding-left: 100px;
+}
+
+input[type="text"] {
+  margin: 0 0 0 10px;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  background: white;
+  color: #000;
+}
+
+#geolocation {
+  border-radius: 5px;
+  background: white;
+  color: #000;
+}
+
+.temperature {
+  border: 2px solid #000;
+  text-align: center;
+  margin: 15px 70px;
+  font-size: 20px;
+  background: white;
+}
+
+.weekday {
+  border: 2px solid #000;
+  margin: 15px;
+  text-align: center;
+  font-weight: bolder;
+  background: white;
+}
