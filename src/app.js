@@ -69,7 +69,7 @@ search("New York");
 
 function searchLocation(position) {
   let apiKey = "e582e780ce67c293f02ebc5bacaa1ef2";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
 
