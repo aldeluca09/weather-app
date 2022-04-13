@@ -18,7 +18,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
@@ -31,7 +31,7 @@
               <div class="col-3">
                 <input
                   type="submit"
-                  value="SEARCH"
+                  value="Search"
                   class="btn"
                   btn-primary
                   w-100
@@ -42,7 +42,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li id="date">Friday 7:30 PM</li>
+              <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -58,8 +58,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity">%</span></li>
-                <li>Wind: <span id="wind">km/h</span></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
               </ul>
             </div>
           </div>
@@ -69,29 +69,10 @@
           ><a href="https://github.com/aldeluca09/weather-app" target="_blank"
             >Open-source code</a
           >
-          <span>by Allie DeLuca</span>
+          by Allie DeLuca
         </small>
       </div>
     </div>
     <script src="src/app.js"></script>
   </body>
 </html>
-
-<!--
-   <div class="row">
-        <div class="col weekday">Saturday</div>
-        <div class="col weekday">Sunday</div>
-        <div class="col weekday">Monday</div>
-        <div class="col weekday">Tuesday</div>
-        <div class="col weekday">Wednesday</div>
-      </div>
-      <div class="row">
-        <div class="col temperature"><strong>50&#176;</strong>/34&#176;</div>
-        <div class="col temperature"><strong>48&#176;</strong>/36&#176;</div>
-        <div class="col temperature"><strong>56&#176;</strong>/40&#176;</div>
-        <div class="col temperature"><strong>54&#176;</strong>/41&#176;</div>
-        <div class="col temperature"><strong>51&#176;</strong>/36&#176;</div>
-      </div>
-    </div>
-    </div>
-    -->
