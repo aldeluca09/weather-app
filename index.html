@@ -16,27 +16,68 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form">
-        <div class="row">
-          <div class="col-3">
-        <input type="text" placeholder="City name..." id="search-text-input" />
-        <input type="submit" value="SEARCH" />
-      </div>
-      <div class="col-3">
-        <button id="currentLocation">Current📍</button>
-      </div>
-      <div class="col-6">
-      <h3 id="date">Friday 7:30 PM</h3>
-      </div>
-      </div>
-        <div id="destination">
-          <h1></h1>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="City name..."
+                  id="search-text-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="SEARCH"
+                  class="btn"
+                  btn-primary
+                  w-100
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date">Friday 7:30 PM</li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="units"> °C | <a href="#">°F </a> </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity">%</span></li>
+                <li>Wind: <span id="wind">km/h</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        <div id="forecast">
-          <a href="#" id="temperature"></a>
-          <div id="humidity">Humidity:</div>
-          <div id="wind">Wind:</div>
-        </div>
+        <small
+          ><a href="https://github.com/aldeluca09/weather-app" target="_blank"
+            >Open-source code</a
+          >
+          <span>by Allie DeLuca</span>
+        </small>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
+
+<!--
    <div class="row">
         <div class="col weekday">Saturday</div>
         <div class="col weekday">Sunday</div>
@@ -52,10 +93,5 @@
         <div class="col temperature"><strong>51&#176;</strong>/36&#176;</div>
       </div>
     </div>
-    <div class="githublink">
-    <a href="https://github.com/aldeluca09/weather-app" target="_blank">Open-source code</a>
-    <span>by Allie DeLuca</span>
     </div>
-    <script src="src/app.js"></script>
-  </body>
-</html>
+    -->
