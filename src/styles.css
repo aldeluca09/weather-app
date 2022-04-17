@@ -61,7 +61,14 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
-  color: rgb(33, 33, 33);
+}
+
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
 }
 
 .weather-temperature .active {
